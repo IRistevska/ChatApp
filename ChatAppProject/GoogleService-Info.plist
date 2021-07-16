@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>666877603739-uer7id7k39cae91gr7r1codnt7li13tc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.666877603739-uer7id7k39cae91gr7r1codnt7li13tc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB3ccyrTioWGdWnrmmLvOiVxEm4k5xYRh0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>666877603739</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>rikianastasoski.ChatAppProject</string>
+	<key>PROJECT_ID</key>
+	<string>chatproject-42ef0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chatproject-42ef0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:666877603739:ios:802a02a7a9bdd071</string>
+	<key>DATABASE_URL</key>
+	<string>https://chatproject-42ef0.firebaseio.com</string>
+</dict>
+</plist>
