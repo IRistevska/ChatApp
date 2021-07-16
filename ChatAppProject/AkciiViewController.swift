@@ -41,10 +41,10 @@ class AkciiViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "akcii naslov"
+        return "title"
     }
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return "akcii footer"
+        return " "
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let action = akcii[indexPath.row]
