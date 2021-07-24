@@ -2,9 +2,7 @@
 //  SignInViewController.swift
 //  ChatAppProject
 //
-//  Created by Riki on 5/23/19.
-//  Copyright © 2019 Risto Anastasoski. All rights reserved.
-//
+
 
 import UIKit
 import FirebaseAuth
@@ -29,18 +27,23 @@ class SignInViewController: UIViewController {
         }
     }
     
+    
     @IBAction func goButtonAction(_ sender: Any) {
+        
         
         Auth.auth().signInAnonymously { (result, error) in
             if error != nil {
                 print("ERROR WHILE LOGGIN IN")
             }else {
                 if let uid = result?.user.uid, let myName = self.myNameTextField.text {
+                    
                     let db = Firestore.firestore()
+                    
                     let profile = Profile()
                     profile.name = myName
                     profile.profileID = uid
                     self.myProfile = profile
+                    
                     db.collection("profiles").document(uid).setData(profile.params)
                     self.performSegue(withIdentifier: "showAkciiViewController", sender: nil)
             }

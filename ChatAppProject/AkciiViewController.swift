@@ -2,9 +2,7 @@
 //  AkciiViewController.swift
 //  ChatAppProject
 //
-//  Created by Jovan Stojanovski on 5/29/19.
-//  Copyright © 2019 Risto Anastasoski. All rights reserved.
-//
+
 
 import UIKit
 import FirebaseFirestore
@@ -12,6 +10,7 @@ import FirebaseFirestore
 class AkciiViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet var akciiTableView: UITableView!
+    
     
     var akcii: [Akcija] = []
     var selectedAction: Akcija?
@@ -21,12 +20,12 @@ class AkciiViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return akcii.count // kolku sto ke imame akcii, zatoa e count
+        return akcii.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AkciiCell") as? AkciiTableViewCell
-        cell?.setupCell(akcija: akcii[indexPath.row])// se zemaa soodvetnata akcija vo soodvetnata kelija
+        cell?.setupCell(akcija: akcii[indexPath.row])
         
         return cell!
     }
@@ -56,14 +55,14 @@ class AkciiViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         
         let db = Firestore.firestore()
-        db.collection("akcija").addSnapshotListener { (snapshot, error) in // se pristapuva do kolekcija akcija na firebase
+        db.collection("akcija").addSnapshotListener { (snapshot, error) in
             if let snapshot = snapshot {
                 for document in snapshot.documents {
                     let akcija = Akcija(data: document)
                     self.akcii.append(akcija)
                     
                 }
-                self.akciiTableView.reloadData() //vrakanje na tabelata
+                self.akciiTableView.reloadData() 
             }
         }
         

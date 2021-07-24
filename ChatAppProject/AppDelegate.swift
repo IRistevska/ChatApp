@@ -2,9 +2,7 @@
 //  AppDelegate.swift
 //  ChatAppProject
 //
-//  Created by Riki on 5/23/19.
-//  Copyright © 2019 Risto Anastasoski. All rights reserved.
-//
+
 
 import UIKit
 import Firebase

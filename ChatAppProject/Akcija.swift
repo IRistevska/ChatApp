@@ -2,8 +2,6 @@
 //  Akcija.swift
 //  ChatAppProject
 //
-//  Created by Jovan Stojanovski on 5/29/19.
-//  Copyright © 2019 Risto Anastasoski. All rights reserved.
 //
 
 import UIKit
@@ -11,6 +9,7 @@ import Firebase
 
 class Akcija: NSObject {
 
+    
     var ime : String?
     var lokacija: String?
     var opis: String?
@@ -22,7 +21,11 @@ class Akcija: NSObject {
         data["ime"] = ime
         data["lokacija"] = lokacija
         data["opis"] = opis
-    if let vreme = vreme { // proveruvame dali vo "vreme" ima akcija ili nema (vo slucajot ne smee da e nil)
+        
+        
+    if let vreme = vreme {
+        
+        
        data["vreme"] = Timestamp(date: vreme)
 
        }
@@ -30,8 +33,10 @@ class Akcija: NSObject {
         return data
     }
     
+   
     var params : [String:Any]{
         get{
+            // instanca od typ dictionary
             var data = [String : Any]()
             data["ime"] = ime
             data["lokacija"] = lokacija
@@ -40,8 +45,9 @@ class Akcija: NSObject {
         }
     }
     
+   
     init(data: QueryDocumentSnapshot) {
-        self.id = data.documentID
+        self.id = data.documentID 
         self.ime = data["ime"] as? String
         self.opis = data["opis"] as? String
         self.lokacija = data["lokacija"] as? String

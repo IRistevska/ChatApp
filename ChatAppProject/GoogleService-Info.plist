@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>666877603739-uer7id7k39cae91gr7r1codnt7li13tc.apps.googleusercontent.com</string>
+	<string>212609857026-s0nvjsl1fma2jcdstfvrji0nu5ctcphv.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.666877603739-uer7id7k39cae91gr7r1codnt7li13tc</string>
+	<string>com.googleusercontent.apps.212609857026-s0nvjsl1fma2jcdstfvrji0nu5ctcphv</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB3ccyrTioWGdWnrmmLvOiVxEm4k5xYRh0</string>
+	<string>AIzaSyC60sW-lWBN1LuSStl8rN-Joo0PU36eWNE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>666877603739</string>
+	<string>212609857026</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>rikianastasoski.ChatAppProject</string>
+	<string>iv.ChatAppProject</string>
 	<key>PROJECT_ID</key>
-	<string>chatproject-42ef0</string>
+	<string>chatapp-ecfb2</string>
 	<key>STORAGE_BUCKET</key>
-	<string>chatproject-42ef0.appspot.com</string>
+	<string>chatapp-ecfb2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:666877603739:ios:802a02a7a9bdd071</string>
+	<string>1:212609857026:ios:559314da93975a19c8991b</string>
 	<key>DATABASE_URL</key>
-	<string>https://chatproject-42ef0.firebaseio.com</string>
+	<string>https://chatapp-ecfb2-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

@@ -2,8 +2,6 @@
 //  DodadiAkcijaViewController.swift
 //  ChatAppProject
 //
-//  Created by Jovan Stojanovski on 5/29/19.
-//  Copyright © 2019 Risto Anastasoski. All rights reserved.
 //
 
 import UIKit
@@ -47,6 +45,10 @@ class DodadiAkcijaViewController: UIViewController, UITextFieldDelegate {
         akcija.lokacija = lokacijaNaNovaAkcija.text
         akcija.opis = opisNaNovaAkcija.text
         
+        textFieldDidBeginEditing(dataTextFiled)
+     
+        akcija.vreme = selectedDate
+        
         var ref: DocumentReference? = nil
         ref = db.collection("akcija").addDocument(data: akcija.parametri()) { err in
             if let err = err {
@@ -73,5 +75,6 @@ class DodadiAkcijaViewController: UIViewController, UITextFieldDelegate {
         timeFormater.dateStyle = .full // stilot na datumot
         timeFormater.timeStyle = .short // stilot na vremeto
         dataTextFiled.text = timeFormater.string(from: sender.date)
+        selectedDate = sender.date
     }
 }

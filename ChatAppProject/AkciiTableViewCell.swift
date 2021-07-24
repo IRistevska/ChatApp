@@ -2,8 +2,7 @@
 //  AkciiTableViewCell.swift
 //  ChatAppProject
 //
-//  Created by Jovan Stojanovski on 5/29/19.
-//  Copyright © 2019 Risto Anastasoski. All rights reserved.
+
 //
 
 import UIKit

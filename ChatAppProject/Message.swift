@@ -37,8 +37,9 @@ class Message: NSObject {
         self.id = data.documentID
         self.text = data["text"] as? String
         self.sender = data["sender"] as? String
-        if let date =  data["sentAt"] as? Timestamp{
-            self.sentAt = date.dateValue()
+        if let time =  data["sentAt"] as? Timestamp{
+            self.sentAt = time.dateValue()
+            
             self.actionID = data["actionID"] as? String
         }
     }

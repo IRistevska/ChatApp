@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C24560626ACBAE900E62210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C24560526ACBAE900E62210 /* GoogleService-Info.plist */; };
 		337144611BE24CA4A439DC93 /* Pods_ChatAppProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DD756F621F4A6E217C3E71 /* Pods_ChatAppProjectTests.framework */; };
 		3C0F06B8229C47B7002593A7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F06B7229C47B7002593A7 /* Profile.swift */; };
 		3C64F78C2296F51B008ADD3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64F78B2296F51B008ADD3E /* AppDelegate.swift */; };
@@ -15,7 +16,6 @@
 		3C64F7962296F51C008ADD3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C64F7942296F51C008ADD3E /* LaunchScreen.storyboard */; };
 		3C64F7A12296F51C008ADD3E /* ChatAppProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64F7A02296F51C008ADD3E /* ChatAppProjectTests.swift */; };
 		3C64F7AC2296F51C008ADD3E /* ChatAppProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64F7AB2296F51C008ADD3E /* ChatAppProjectUITests.swift */; };
-		3CAC5D342296F99E004E91CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC5D332296F99E004E91CF /* GoogleService-Info.plist */; };
 		3CAC5D362296FDD7004E91CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC5D352296FDD7004E91CF /* SignInViewController.swift */; };
 		3CAC5D382296FDE5004E91CF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC5D372296FDE5004E91CF /* ChatViewController.swift */; };
 		3CAC5D3A2297076B004E91CF /* ReceiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC5D392297076B004E91CF /* ReceiverTableViewCell.swift */; };
@@ -49,6 +49,7 @@
 /* Begin PBXFileReference section */
 		0954619DA4AFB6E534779D73 /* Pods_ChatAppProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BAA5BB8FBAA510AE0F374BB /* Pods-ChatAppProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppProject.debug.xcconfig"; path = "Target Support Files/Pods-ChatAppProject/Pods-ChatAppProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2C24560526ACBAE900E62210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C0F06B7229C47B7002593A7 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		3C64F7882296F51B008ADD3E /* ChatAppProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatAppProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C64F78B2296F51B008ADD3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		3C64F7A72296F51C008ADD3E /* ChatAppProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C64F7AB2296F51C008ADD3E /* ChatAppProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppProjectUITests.swift; sourceTree = "<group>"; };
 		3C64F7AD2296F51C008ADD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CAC5D332296F99E004E91CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3CAC5D352296FDD7004E91CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3CAC5D372296FDE5004E91CF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		3CAC5D392297076B004E91CF /* ReceiverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTableViewCell.swift; sourceTree = "<group>"; };
@@ -157,6 +157,7 @@
 		3C64F78A2296F51B008ADD3E /* ChatAppProject */ = {
 			isa = PBXGroup;
 			children = (
+				2C24560526ACBAE900E62210 /* GoogleService-Info.plist */,
 				3C64F78F2296F51B008ADD3E /* Main.storyboard */,
 				D1DA2721229EFC9300ED471D /* DodadiAkcijaViewController.swift */,
 				D1DA2723229EFF6300ED471D /* Akcija.swift */,
@@ -170,7 +171,6 @@
 				D1DA271D229EFA8700ED471D /* AkciiViewController.swift */,
 				D1DA271F229EFB0600ED471D /* AkciiTableViewCell.swift */,
 				3C64F7972296F51C008ADD3E /* Info.plist */,
-				3CAC5D332296F99E004E91CF /* GoogleService-Info.plist */,
 				3C64F7942296F51C008ADD3E /* LaunchScreen.storyboard */,
 				3C64F7922296F51C008ADD3E /* Assets.xcassets */,
 			);
@@ -304,9 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C64F7962296F51C008ADD3E /* LaunchScreen.storyboard in Resources */,
-				3CAC5D342296F99E004E91CF /* GoogleService-Info.plist in Resources */,
 				3C64F7932296F51C008ADD3E /* Assets.xcassets in Resources */,
 				3C64F7912296F51B008ADD3E /* Main.storyboard in Resources */,
+				2C24560626ACBAE900E62210 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rikianastasoski.ChatAppProject;
+				PRODUCT_BUNDLE_IDENTIFIER = iv.ChatAppProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -648,7 +648,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rikianastasoski.ChatAppProject;
+				PRODUCT_BUNDLE_IDENTIFIER = iv.ChatAppProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
